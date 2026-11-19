@@ -1,2 +1,2 @@
-# privtools-privacy
-Privacy policy for PrivTools applications
+# privsuite-privacy
+Privacy policy for Priv-Suite
