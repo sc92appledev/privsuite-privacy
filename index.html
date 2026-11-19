@@ -1,1555 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111827">
-  <meta name="description" content="PrivTools privacy policy for PRIV-Suite, Priv-TimeCalc, Priv-Calc, Priv-Tris and Priv-Random. Available in nine languages.">
-  <title>Privacy Policy — PrivTools / PRIV-Suite</title>
-
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f4f6fa;
-      --surface: #ffffff;
-      --text: #172033;
-      --muted: #596579;
-      --border: #dfe4ec;
-      --accent: #4263eb;
-      --link: #3158c9;
-      --notice: #eef3ff;
-      --shadow: 0 12px 35px rgba(20, 32, 55, .07);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0c111b;
-        --surface: #151c29;
-        --text: #e8edf6;
-        --muted: #aab5c7;
-        --border: #2b3547;
-        --accent: #91a7ff;
-        --link: #a8b8ff;
-        --notice: #202b43;
-        --shadow: 0 12px 35px rgba(0, 0, 0, .2);
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-padding-top: 20px;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.7;
-    }
-
-    a {
-      color: var(--link);
-      overflow-wrap: anywhere;
-    }
-
-    a:focus-visible {
-      outline: 3px solid var(--accent);
-      outline-offset: 4px;
-    }
-
-    .container {
-      width: min(900px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 42px 0 60px;
-    }
-
-    header,
-    footer {
-      text-align: center;
-    }
-
-    header {
-      margin-bottom: 28px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.1rem;
-      font-weight: 750;
-    }
-
-    .brand-mark {
-      display: grid;
-      place-items: center;
-      width: 36px;
-      height: 36px;
-      border-radius: 11px;
-      background: var(--accent);
-      color: var(--surface);
-    }
-
-    h1 {
-      font-size: clamp(1.8rem, 5vw, 2.6rem);
-      line-height: 1.2;
-      margin: 16px 0 8px;
-      letter-spacing: -.035em;
-    }
-
-    h2 {
-      font-size: clamp(1.4rem, 4vw, 1.9rem);
-      line-height: 1.35;
-      margin: 0 0 12px;
-    }
-
-    h3 {
-      font-size: 1.15rem;
-      line-height: 1.4;
-      margin: 0 0 10px;
-    }
-
-    h4 {
-      font-size: 1rem;
-      margin: 16px 0 4px;
-    }
-
-    p {
-      margin: 8px 0 12px;
-    }
-
-    .subtitle,
-    .updated,
-    footer {
-      color: var(--muted);
-    }
-
-    .language-nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin: 22px 0 28px;
-    }
-
-    .language-nav a {
-      padding: 8px 13px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: .92rem;
-      font-weight: 650;
-      background: var(--surface);
-    }
-
-    .language-nav a:hover {
-      border-color: var(--accent);
-    }
-
-    article {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      padding: clamp(20px, 5vw, 38px);
-      margin-bottom: 28px;
-      scroll-margin-top: 20px;
-    }
-
-    section {
-      padding: 18px 0;
-    }
-
-    section + section {
-      border-top: 1px solid var(--border);
-    }
-
-    .notice {
-      background: var(--notice);
-      border-radius: 12px;
-      padding: 14px 16px;
-      margin: 14px 0;
-    }
-
-    .back {
-      font-size: .92rem;
-    }
-
-    footer {
-      font-size: .9rem;
-      padding-top: 10px;
-    }
-
-    @media print {
-      :root {
-        color-scheme: light;
-        --bg: #ffffff;
-        --surface: #ffffff;
-        --text: #111111;
-        --muted: #444444;
-        --border: #dddddd;
-        --notice: #f3f3f3;
-      }
-
-      .container {
-        width: 100%;
-        padding: 0;
-      }
-
-      article {
-        box-shadow: none;
-        border: 0;
-        padding: 0;
-        break-before: page;
-      }
-
-      article:first-of-type {
-        break-before: auto;
-      }
-
-      .language-nav,
-      .back {
-        display: none;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="PRIV-Suite privacy policy: calculator, time calculator and random generator. Available in nine languages.">
+<title>Privacy Policy — PRIV-Suite</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f4f6fa; --surface: #fff; --text: #172033; --muted: #596579;
+  --border: #dfe4ec; --accent: #4263eb; --link: #3158c9; --notice: #eef3ff;
+  --shadow: 0 12px 35px rgba(20,32,55,.07);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c111b; --surface: #151c29; --text: #e8edf6; --muted: #aab5c7;
+    --border: #2b3547; --accent: #91a7ff; --link: #a8b8ff; --notice: #202b43;
+    --shadow: 0 12px 35px rgba(0,0,0,.2);
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 20px; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.container { width: min(900px, calc(100% - 32px)); margin: 0 auto; padding: 42px 0 60px; }
+header, footer { text-align: center; }
+header { margin-bottom: 28px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: 750; }
+.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; background: var(--accent); color: var(--surface); }
+h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.2; margin: 16px 0 8px; letter-spacing: -.035em; }
+h2 { font-size: clamp(1.4rem, 4vw, 1.9rem); line-height: 1.35; margin: 0 0 12px; }
+h3 { font-size: 1.15rem; line-height: 1.4; margin: 0 0 10px; }
+h4 { font-size: 1rem; margin: 16px 0 4px; }
+p { margin: 8px 0 12px; }
+.subtitle, .updated, footer { color: var(--muted); }
+.language-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 22px 0 28px; }
+.language-nav a { padding: 8px 13px; border: 1px solid var(--border); border-radius: 999px; text-decoration: none; font-size: .92rem; font-weight: 650; background: var(--surface); }
+.language-nav a:hover { border-color: var(--accent); }
+article { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); padding: clamp(20px, 5vw, 38px); margin-bottom: 28px; scroll-margin-top: 20px; }
+section { padding: 18px 0; }
+section + section { border-top: 1px solid var(--border); }
+.notice { background: var(--notice); border-radius: 12px; padding: 14px 16px; margin: 14px 0; }
+.back { font-size: .92rem; }
+footer { font-size: .9rem; padding-top: 10px; }
+@media print {
+  :root { color-scheme: light; --bg: #fff; --surface: #fff; --text: #111; --muted: #444; --border: #ddd; --notice: #f3f3f3; }
+  .container { width: 100%; padding: 0; }
+  article { box-shadow: none; border: 0; padding: 0; break-before: page; }
+  article:first-of-type { break-before: auto; }
+  .language-nav, .back { display: none; }
+}
+</style>
 </head>
-
 <body>
-  <main class="container">
-    <header>
-      <div class="brand">
-        <span class="brand-mark" aria-hidden="true">P</span>
-        <span>PrivTools</span>
-      </div>
-
-      <h1>Privacy Policy</h1>
-
-      <p class="subtitle">
-        PRIV-Suite · Priv-TimeCalc · Priv-Calc · Priv-Tris · Priv-Random
-      </p>
-    </header>
-
-    <nav id="languages" class="language-nav" aria-label="Language selection">
-      <a href="#en" lang="en" hreflang="en">English</a>
-      <a href="#it" lang="it" hreflang="it">Italiano</a>
-      <a href="#es" lang="es" hreflang="es">Español</a>
-      <a href="#fr" lang="fr" hreflang="fr">Français</a>
-      <a href="#de" lang="de" hreflang="de">Deutsch</a>
-      <a href="#pt-BR" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
-      <a href="#zh-Hans" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
-      <a href="#ja" lang="ja" hreflang="ja">日本語</a>
-      <a href="#ko" lang="ko" hreflang="ko">한국어</a>
-    </nav>
-
-    <article id="en" lang="en" aria-labelledby="title-en">
-      <h2 id="title-en">Privacy Policy — PrivTools</h2>
-      <p class="subtitle">Privacy by design. Transparency. User control.</p>
-      <p class="updated">
-        <time datetime="2026-11-19">Last updated: November 19, 2026</time>
-      </p>
-
-      <p>
-        This policy describes the privacy practices of the PrivTools
-        applications listed below, including PRIV-Suite, as well as support
-        requests and visits to this website. Listing an application does
-        not imply that it is currently available on the App Store.
-      </p>
-
-      <section>
-        <h3>1. Data controller</h3>
-        <p>
-          For processing whose purposes and means I determine in connection
-          with these applications, the data controller is Simone Cecere.
-          For privacy or personal-data requests, contact:
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>2. Applications covered</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite combines a numerical calculator, a time calculator
-          and a random generator for letters, numbers, symbols and emoji,
-          with optional accented letters and extra symbols.
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>
-          Priv-TimeCalc performs addition, subtraction and conversion
-          of durations.
-        </p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc performs basic mathematical operations.</p>
-
-        <h4>Priv-Tris</h4>
-        <p>
-          Priv-Tris is a tic-tac-toe game for two players on the same device.
-        </p>
-
-        <h4>Priv-Random</h4>
-        <p>
-          Priv-Random generates random letters, numbers, symbols and emoji.
-        </p>
-      </section>
-
-      <section>
-        <h3>3. Local processing and system clipboard</h3>
-        <p>
-          Calculations, random generation and gameplay take place locally
-          on the device. The developer does not collect or transmit input
-          values, results, game moves or generation preferences to remote
-          servers. These functions do not require an Internet connection
-          or an account. The applications do not intentionally include
-          advertising, third-party analytics or tracking tools.
-        </p>
-        <p class="notice">
-          In applications offering Copy, the system clipboard is used only
-          after an explicit user action. The applications do not
-          automatically read clipboard contents. Copied data is also
-          subject to the operating system's behavior and settings.
-        </p>
-      </section>
-
-      <section>
-        <h3>4. Future applications</h3>
-        <p>
-          New applications may be added to PrivTools. Their features and
-          data practices may differ. This policy will be updated where
-          necessary, and additional information may be provided for
-          individual applications.
-        </p>
-      </section>
-
-      <section>
-        <h3>5. Support email</h3>
-        <p>
-          If you email support, I use the information in your message to
-          review and manage your request, reply and provide assistance.
-          Please do not include unnecessary personal information.
-          Messages are retained for as long as necessary to handle the
-          request and, where applicable, for legal or rights-protection
-          purposes.
-        </p>
-        <p>
-          The email provider processes technical and other data associated
-          with its service according to its own privacy notice and its
-          role in each processing activity. It may process data for its
-          own purposes, separately from my handling of support requests.
-        </p>
-      </section>
-
-      <section>
-        <h3>6. Website hosting</h3>
-        <p>
-          This page is hosted on GitHub Pages. To provide and secure its
-          services, GitHub may process technical data such as IP addresses,
-          device information, request data and access logs under its own
-          privacy notice and according to its role in each processing
-          activity. Reading this website is separate from using the
-          applications offline.
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            GitHub General Privacy Statement
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. Legal basis and your rights</h3>
-        <p>
-          Where the GDPR applies, personal data is processed on the legal
-          basis appropriate to the circumstances, for example to respond
-          to a person's request or comply with legal obligations.
-          Subject to applicable law, you may request access, rectification,
-          erasure, restriction of processing, object to processing or
-          exercise data portability rights where applicable. For processing
-          for which I am responsible, contact the email address above.
-        </p>
-        <p>
-          You may also lodge a complaint with the competent supervisory
-          authority. In Italy:
-          <a href="https://www.garanteprivacy.it/">
-            Italian Data Protection Authority (Garante)
-          </a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>8. Changes to this policy</h3>
-        <p>
-          This policy may be updated to reflect changes to the applications,
-          services used or applicable obligations. The date above indicates
-          the latest update.
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">Back to languages</a></p>
-    </article>
-
-    <article id="it" lang="it" aria-labelledby="title-it">
-      <h2 id="title-it">Informativa sulla privacy — PrivTools</h2>
-      <p class="subtitle">
-        Privacy fin dalla progettazione. Trasparenza. Controllo dell'utente.
-      </p>
-      <p class="updated">
-        <time datetime="2026-11-19">Ultimo aggiornamento: 19 novembre 2026</time>
-      </p>
-
-      <p>
-        Questa informativa descrive le pratiche relative alla privacy delle
-        applicazioni PrivTools elencate di seguito, inclusa PRIV-Suite,
-        e la gestione delle richieste di assistenza e delle visite a questo
-        sito. La presenza nell'elenco non implica che un'app sia attualmente
-        disponibile sull'App Store.
-      </p>
-
-      <section>
-        <h3>1. Titolare del trattamento</h3>
-        <p>
-          Per i trattamenti di cui determina finalità e mezzi nell'ambito
-          di queste applicazioni, il titolare è Simone Cecere.
-          Per richieste sulla privacy o sui dati personali, contatta:
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>2. Applicazioni coperte</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite riunisce una calcolatrice numerica, una calcolatrice
-          temporale e un generatore casuale di lettere, numeri, simboli ed
-          emoji, con lettere accentate e simboli extra facoltativi.
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>Priv-TimeCalc esegue somme, sottrazioni e conversioni di durate.</p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc esegue le principali operazioni matematiche.</p>
-
-        <h4>Priv-Tris</h4>
-        <p>
-          Priv-Tris è un gioco del tris per due giocatori sullo stesso dispositivo.
-        </p>
-
-        <h4>Priv-Random</h4>
-        <p>Priv-Random genera lettere, numeri, simboli ed emoji casuali.</p>
-      </section>
-
-      <section>
-        <h3>3. Trattamento locale e appunti del sistema</h3>
-        <p>
-          Calcoli, generazioni casuali e partite sono gestiti localmente
-          sul dispositivo. Lo sviluppatore non raccoglie né trasmette a
-          server remoti valori inseriti, risultati, mosse o preferenze di
-          generazione. Queste funzioni non richiedono Internet né account.
-          Le applicazioni non integrano intenzionalmente pubblicità,
-          strumenti di analisi o tracciamento di terze parti.
-        </p>
-        <p class="notice">
-          Nelle applicazioni con la funzione Copia, gli appunti del sistema
-          vengono utilizzati solo dopo un'azione esplicita dell'utente.
-          Le applicazioni non leggono automaticamente gli appunti.
-          I dati copiati sono soggetti anche al funzionamento e alle
-          impostazioni del sistema operativo.
-        </p>
-      </section>
-
-      <section>
-        <h3>4. Applicazioni future</h3>
-        <p>
-          Nuove applicazioni potranno essere aggiunte a PrivTools.
-          Funzioni e pratiche relative ai dati potranno differire.
-          Questa informativa verrà aggiornata quando necessario e potranno
-          essere fornite informazioni aggiuntive per le singole app.
-        </p>
-      </section>
-
-      <section>
-        <h3>5. Email di assistenza</h3>
-        <p>
-          Se scrivi all'assistenza, utilizzo le informazioni del messaggio
-          per esaminare e gestire la richiesta, rispondere e fornire supporto.
-          Non includere dati personali non necessari. I messaggi sono
-          conservati per il tempo necessario alla gestione della richiesta
-          e per eventuali esigenze legali o di tutela dei diritti, quando
-          applicabili.
-        </p>
-        <p>
-          Il fornitore di posta tratta i dati tecnici e gli altri dati del
-          servizio secondo la propria informativa e il ruolo assunto per
-          ciascun trattamento. Può effettuare trattamenti per finalità
-          proprie, distinti dalla gestione delle richieste di assistenza
-          da parte mia.
-        </p>
-      </section>
-
-      <section>
-        <h3>6. Hosting del sito</h3>
-        <p>
-          Questa pagina è ospitata su GitHub Pages. Per erogare e proteggere
-          i suoi servizi, GitHub può trattare dati tecnici come indirizzi IP,
-          informazioni sul dispositivo, dati delle richieste e log di accesso
-          secondo la propria informativa e il ruolo assunto per ciascun
-          trattamento. La visita al sito è distinta dall'utilizzo offline
-          delle applicazioni.
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            Informativa sulla privacy di GitHub
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. Base giuridica e diritti</h3>
-        <p>
-          Quando si applica il GDPR, i dati personali sono trattati sulla
-          base giuridica pertinente al caso concreto, per esempio per
-          rispondere a una richiesta o adempiere a obblighi di legge.
-          Nei limiti della normativa puoi chiedere accesso, rettifica,
-          cancellazione, limitazione, opporti al trattamento o esercitare
-          la portabilità quando applicabile. Per i trattamenti di mia
-          competenza, contatta l'indirizzo email sopra indicato.
-        </p>
-        <p>
-          Puoi inoltre proporre reclamo all'autorità di controllo competente.
-          In Italia:
-          <a href="https://www.garanteprivacy.it/">
-            Garante per la protezione dei dati personali
-          </a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>8. Modifiche all'informativa</h3>
-        <p>
-          Questa informativa può essere aggiornata per riflettere modifiche
-          alle applicazioni, ai servizi utilizzati o agli obblighi applicabili.
-          La data sopra indica l'ultimo aggiornamento.
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">Torna alle lingue</a></p>
-    </article>
-
-    <article id="es" lang="es" aria-labelledby="title-es">
-      <h2 id="title-es">Política de privacidad — PrivTools</h2>
-      <p class="subtitle">
-        Privacidad desde el diseño. Transparencia. Control del usuario.
-      </p>
-      <p class="updated">
-        <time datetime="2026-11-19">
-          Última actualización: 19 de noviembre de 2026
-        </time>
-      </p>
-
-      <p>
-        Esta política describe las prácticas de privacidad de las aplicaciones
-        PrivTools indicadas a continuación, incluida PRIV-Suite, así como la
-        gestión de las solicitudes de asistencia y las visitas a este sitio.
-        La inclusión de una app no implica que esté disponible actualmente
-        en el App Store.
-      </p>
-
-      <section>
-        <h3>1. Responsable del tratamiento</h3>
-        <p>
-          El responsable del tratamiento cuyos fines y medios determino
-          en relación con estas aplicaciones es Simone Cecere.
-          Para consultas sobre privacidad o datos personales, contacta con:
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>2. Aplicaciones cubiertas</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite reúne una calculadora numérica, una calculadora de
-          tiempo y un generador aleatorio de letras, números, símbolos y
-          emoji, con letras acentuadas y símbolos adicionales opcionales.
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>Priv-TimeCalc suma, resta y convierte duraciones.</p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc realiza operaciones matemáticas básicas.</p>
-
-        <h4>Priv-Tris</h4>
-        <p>
-          Priv-Tris es un juego de tres en raya para dos jugadores
-          en el mismo dispositivo.
-        </p>
-
-        <h4>Priv-Random</h4>
-        <p>Priv-Random genera letras, números, símbolos y emoji aleatorios.</p>
-      </section>
-
-      <section>
-        <h3>3. Tratamiento local y portapapeles</h3>
-        <p>
-          Los cálculos, las generaciones aleatorias y las partidas se
-          realizan localmente en el dispositivo. El desarrollador no
-          recopila ni transmite a servidores remotos valores introducidos,
-          resultados, jugadas ni preferencias de generación. Estas funciones
-          no requieren Internet ni cuenta. Las aplicaciones no incluyen
-          intencionadamente publicidad, análisis ni seguimiento de terceros.
-        </p>
-        <p class="notice">
-          En las aplicaciones con la función Copiar, el portapapeles del
-          sistema se utiliza solo tras una acción explícita del usuario.
-          Las aplicaciones no leen automáticamente su contenido.
-          Los datos copiados también están sujetos al funcionamiento
-          y la configuración del sistema operativo.
-        </p>
-      </section>
-
-      <section>
-        <h3>4. Aplicaciones futuras</h3>
-        <p>
-          Se podrán añadir nuevas aplicaciones a PrivTools.
-          Sus funciones y prácticas de datos podrán diferir.
-          Esta política se actualizará cuando sea necesario y se podrá
-          facilitar información adicional para cada app.
-        </p>
-      </section>
-
-      <section>
-        <h3>5. Correo de asistencia</h3>
-        <p>
-          Si escribes al correo de asistencia, utilizo la información del
-          mensaje para examinar y gestionar la solicitud, responder y
-          prestar ayuda. No incluyas datos personales innecesarios.
-          Los mensajes se conservan durante el tiempo necesario para
-          gestionar la solicitud y, cuando proceda, para fines legales
-          o de protección de derechos.
-        </p>
-        <p>
-          El proveedor de correo trata los datos técnicos y otros datos
-          del servicio según su propia política y su función en cada
-          tratamiento. Puede tratar datos para fines propios, separados
-          de mi gestión de las solicitudes de asistencia.
-        </p>
-      </section>
-
-      <section>
-        <h3>6. Alojamiento del sitio</h3>
-        <p>
-          Esta página se aloja en GitHub Pages. Para prestar y proteger
-          sus servicios, GitHub puede tratar datos técnicos como direcciones
-          IP, información del dispositivo, datos de solicitudes y registros
-          de acceso según su propia política y su función en cada tratamiento.
-          Visitar el sitio es distinto de utilizar las aplicaciones sin conexión.
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            Declaración general de privacidad de GitHub
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. Base jurídica y derechos</h3>
-        <p>
-          Cuando se aplica el RGPD, los datos personales se tratan según
-          la base jurídica pertinente, por ejemplo para responder a una
-          solicitud o cumplir obligaciones legales. Dentro de los límites
-          legales puedes solicitar acceso, rectificación, supresión,
-          limitación, oponerte al tratamiento o ejercer la portabilidad
-          cuando proceda. Para tratamientos de mi responsabilidad,
-          contacta con el correo indicado arriba.
-        </p>
-        <p>
-          También puedes presentar una reclamación ante la autoridad
-          de control competente. En Italia:
-          <a href="https://www.garanteprivacy.it/">
-            Autoridad italiana de protección de datos (Garante)
-          </a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>8. Cambios en esta política</h3>
-        <p>
-          Esta política puede actualizarse para reflejar cambios en las
-          aplicaciones, los servicios utilizados o las obligaciones
-          aplicables. La fecha anterior indica la última actualización.
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">Volver a los idiomas</a></p>
-    </article>
-
-    <article id="fr" lang="fr" aria-labelledby="title-fr">
-      <h2 id="title-fr">Politique de confidentialité — PrivTools</h2>
-      <p class="subtitle">
-        Confidentialité dès la conception. Transparence. Contrôle de l'utilisateur.
-      </p>
-      <p class="updated">
-        <time datetime="2026-11-19">Dernière mise à jour : 19 novembre 2026</time>
-      </p>
-
-      <p>
-        Cette politique décrit les pratiques de confidentialité des applications
-        PrivTools ci-dessous, dont PRIV-Suite, ainsi que la gestion des demandes
-        d'assistance et des visites de ce site. La présence d'une app dans
-        la liste ne signifie pas qu'elle est actuellement disponible sur
-        l'App Store.
-      </p>
-
-      <section>
-        <h3>1. Responsable du traitement</h3>
-        <p>
-          Pour les traitements dont je détermine les finalités et les moyens
-          dans le cadre de ces applications, le responsable est Simone Cecere.
-          Pour toute demande relative à la confidentialité ou aux données
-          personnelles, contactez :
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>2. Applications concernées</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite réunit une calculatrice numérique, une calculatrice
-          temporelle et un générateur aléatoire de lettres, nombres,
-          symboles et emoji, avec lettres accentuées et symboles
-          supplémentaires facultatifs.
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>Priv-TimeCalc additionne, soustrait et convertit des durées.</p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc effectue les opérations mathématiques de base.</p>
-
-        <h4>Priv-Tris</h4>
-        <p>
-          Priv-Tris est un jeu de morpion pour deux joueurs sur le même appareil.
-        </p>
-
-        <h4>Priv-Random</h4>
-        <p>
-          Priv-Random génère des lettres, nombres, symboles et emoji aléatoires.
-        </p>
-      </section>
-
-      <section>
-        <h3>3. Traitement local et presse-papiers</h3>
-        <p>
-          Les calculs, les générations aléatoires et les parties sont
-          réalisés localement sur l'appareil. Le développeur ne collecte
-          ni ne transmet à des serveurs distants les valeurs saisies,
-          résultats, coups ou préférences de génération. Ces fonctions
-          ne nécessitent ni Internet ni compte. Les applications n'intègrent
-          pas intentionnellement de publicité, d'analyse ou de suivi tiers.
-        </p>
-        <p class="notice">
-          Dans les applications proposant Copier, le presse-papiers système
-          est utilisé uniquement après une action explicite de l'utilisateur.
-          Les applications ne lisent pas automatiquement son contenu.
-          Les données copiées dépendent également du fonctionnement
-          et des réglages du système d'exploitation.
-        </p>
-      </section>
-
-      <section>
-        <h3>4. Applications futures</h3>
-        <p>
-          De nouvelles applications pourront être ajoutées à PrivTools.
-          Leurs fonctions et pratiques de données pourront différer.
-          Cette politique sera mise à jour si nécessaire et des informations
-          complémentaires pourront être fournies pour chaque app.
-        </p>
-      </section>
-
-      <section>
-        <h3>5. Assistance par e-mail</h3>
-        <p>
-          Si vous écrivez à l'assistance, j'utilise les informations du message
-          pour examiner et gérer votre demande, répondre et vous aider.
-          N'incluez pas de données personnelles inutiles. Les messages sont
-          conservés le temps nécessaire au traitement de la demande et,
-          le cas échéant, à des fins légales ou de protection des droits.
-        </p>
-        <p>
-          Le fournisseur de messagerie traite les données techniques et autres
-          données du service conformément à sa propre politique et à son rôle
-          pour chaque traitement. Il peut traiter des données à ses propres
-          fins, distinctes de ma gestion des demandes d'assistance.
-        </p>
-      </section>
-
-      <section>
-        <h3>6. Hébergement du site</h3>
-        <p>
-          Cette page est hébergée sur GitHub Pages. Pour fournir et sécuriser
-          ses services, GitHub peut traiter des données techniques telles
-          que l'adresse IP, les informations sur l'appareil, les données des
-          requêtes et les journaux d'accès, selon sa propre politique et son
-          rôle pour chaque traitement. La visite du site est distincte de
-          l'utilisation hors ligne des applications.
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            Déclaration générale de confidentialité de GitHub
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. Base juridique et droits</h3>
-        <p>
-          Lorsque le RGPD s'applique, les données personnelles sont traitées
-          sur la base juridique adaptée, par exemple pour répondre à une
-          demande ou respecter des obligations légales. Dans les limites
-          de la loi, vous pouvez demander l'accès, la rectification,
-          l'effacement, la limitation, vous opposer au traitement ou exercer
-          la portabilité lorsque celle-ci s'applique. Pour les traitements
-          dont je suis responsable, contactez l'adresse ci-dessus.
-        </p>
-        <p>
-          Vous pouvez également déposer une réclamation auprès de l'autorité
-          de contrôle compétente. En Italie :
-          <a href="https://www.garanteprivacy.it/">
-            Autorité italienne de protection des données (Garante)
-          </a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>8. Modifications de cette politique</h3>
-        <p>
-          Cette politique peut être mise à jour pour refléter les modifications
-          des applications, des services utilisés ou des obligations applicables.
-          La date ci-dessus indique la dernière mise à jour.
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">Retour aux langues</a></p>
-    </article>
-
-    <article id="de" lang="de" aria-labelledby="title-de">
-      <h2 id="title-de">Datenschutzrichtlinie — PrivTools</h2>
-      <p class="subtitle">
-        Datenschutz von Anfang an. Transparenz. Kontrolle durch die Nutzer.
-      </p>
-      <p class="updated">
-        <time datetime="2026-11-19">Letzte Aktualisierung: 19. November 2026</time>
-      </p>
-
-      <p>
-        Diese Richtlinie beschreibt die Datenschutzpraktiken der unten
-        genannten PrivTools-Apps einschließlich PRIV-Suite sowie den Umgang
-        mit Supportanfragen und Besuchen dieser Website. Die Nennung einer
-        App bedeutet nicht, dass sie derzeit im App Store verfügbar ist.
-      </p>
-
-      <section>
-        <h3>1. Verantwortlicher</h3>
-        <p>
-          Verantwortlicher für Verarbeitungen im Zusammenhang mit diesen
-          Apps, deren Zwecke und Mittel ich festlege, ist Simone Cecere.
-          Für Datenschutzanfragen wenden Sie sich an:
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>2. Erfasste Anwendungen</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite vereint einen Taschenrechner, einen Zeitrechner und einen
-          Zufallsgenerator für Buchstaben, Zahlen, Symbole und Emojis, optional
-          mit Akzentbuchstaben und zusätzlichen Symbolen.
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>Priv-TimeCalc addiert, subtrahiert und konvertiert Zeitspannen.</p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc führt grundlegende mathematische Operationen aus.</p>
-
-        <h4>Priv-Tris</h4>
-        <p>
-          Priv-Tris ist ein Tic-Tac-Toe-Spiel für zwei Personen auf demselben Gerät.
-        </p>
-
-        <h4>Priv-Random</h4>
-        <p>
-          Priv-Random erzeugt zufällige Buchstaben, Zahlen, Symbole und Emojis.
-        </p>
-      </section>
-
-      <section>
-        <h3>3. Lokale Verarbeitung und Zwischenablage</h3>
-        <p>
-          Berechnungen, Zufallsgenerierung und Spielabläufe erfolgen lokal
-          auf dem Gerät. Der Entwickler erhebt keine Eingaben, Ergebnisse,
-          Spielzüge oder Generierungseinstellungen und übermittelt sie nicht
-          an entfernte Server. Diese Funktionen benötigen weder Internet noch
-          ein Konto. Die Apps enthalten keine absichtlich eingebundenen
-          Werbe-, Analyse- oder Tracking-Dienste Dritter.
-        </p>
-        <p class="notice">
-          In Apps mit Kopierfunktion wird die Systemzwischenablage nur nach
-          einer ausdrücklichen Nutzeraktion verwendet. Die Apps lesen die
-          Zwischenablage nicht automatisch. Kopierte Daten unterliegen auch
-          dem Verhalten und den Einstellungen des Betriebssystems.
-        </p>
-      </section>
-
-      <section>
-        <h3>4. Künftige Anwendungen</h3>
-        <p>
-          PrivTools kann um neue Apps erweitert werden. Deren Funktionen
-          und Datenpraktiken können abweichen. Diese Richtlinie wird bei
-          Bedarf aktualisiert und kann durch app-spezifische Informationen
-          ergänzt werden.
-        </p>
-      </section>
-
-      <section>
-        <h3>5. Support per E-Mail</h3>
-        <p>
-          Wenn Sie den Support per E-Mail kontaktieren, verwende ich die
-          Angaben in Ihrer Nachricht, um Ihre Anfrage zu prüfen, zu bearbeiten,
-          zu beantworten und Hilfe zu leisten. Bitte senden Sie keine
-          unnötigen personenbezogenen Daten. Nachrichten werden so lange
-          aufbewahrt, wie es für die Bearbeitung und gegebenenfalls für
-          rechtliche Zwecke oder den Schutz von Rechten erforderlich ist.
-        </p>
-        <p>
-          Der E-Mail-Anbieter verarbeitet technische und andere Dienstdaten
-          nach seiner eigenen Datenschutzerklärung und seiner Rolle bei
-          der jeweiligen Verarbeitung. Er kann Daten für eigene Zwecke
-          verarbeiten, unabhängig von meiner Bearbeitung der Supportanfragen.
-        </p>
-      </section>
-
-      <section>
-        <h3>6. Website-Hosting</h3>
-        <p>
-          Diese Seite wird auf GitHub Pages gehostet. Zur Bereitstellung und
-          Absicherung seiner Dienste kann GitHub technische Daten wie
-          IP-Adressen, Geräteinformationen, Anfragedaten und Zugriffsprotokolle
-          gemäß seiner Datenschutzerklärung und seiner jeweiligen Rolle
-          verarbeiten. Der Websitebesuch ist von der Offline-Nutzung
-          der Apps zu unterscheiden.
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            Allgemeine Datenschutzerklärung von GitHub
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. Rechtsgrundlage und Ihre Rechte</h3>
-        <p>
-          Soweit die DSGVO gilt, werden personenbezogene Daten auf der jeweils
-          einschlägigen Rechtsgrundlage verarbeitet, etwa zur Beantwortung
-          einer Anfrage oder zur Erfüllung gesetzlicher Pflichten.
-          Im gesetzlichen Rahmen können Sie Auskunft, Berichtigung,
-          Löschung, Einschränkung, Widerspruch und gegebenenfalls
-          Datenübertragbarkeit verlangen. Für Verarbeitungen in meiner
-          Verantwortung kontaktieren Sie die oben genannte E-Mail-Adresse.
-        </p>
-        <p>
-          Sie können sich außerdem bei der zuständigen Aufsichtsbehörde
-          beschweren. In Italien:
-          <a href="https://www.garanteprivacy.it/">
-            Italienische Datenschutzbehörde (Garante)
-          </a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>8. Änderungen dieser Richtlinie</h3>
-        <p>
-          Diese Richtlinie kann aktualisiert werden, um Änderungen an Apps,
-          genutzten Diensten oder geltenden Pflichten widerzuspiegeln.
-          Das Datum oben nennt die letzte Aktualisierung.
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">Zur Sprachauswahl</a></p>
-    </article>
-
-    <article id="pt-BR" lang="pt-BR" aria-labelledby="title-pt-BR">
-      <h2 id="title-pt-BR">Política de privacidade — PrivTools</h2>
-      <p class="subtitle">
-        Privacidade desde a concepção. Transparência. Controle do usuário.
-      </p>
-      <p class="updated">
-        <time datetime="2026-11-19">
-          Última atualização: 19 de novembro de 2026
-        </time>
-      </p>
-
-      <p>
-        Esta política descreve as práticas de privacidade dos aplicativos
-        PrivTools abaixo, incluindo o PRIV-Suite, e o tratamento das
-        solicitações de suporte e visitas a este site. A inclusão de um
-        aplicativo não significa que ele esteja disponível atualmente
-        na App Store.
-      </p>
-
-      <section>
-        <h3>1. Controlador de dados</h3>
-        <p>
-          O controlador dos tratamentos cujas finalidades e meios determino
-          em relação a estes aplicativos é Simone Cecere.
-          Para questões de privacidade ou dados pessoais, entre em contato:
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>2. Aplicativos abrangidos</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          O PRIV-Suite reúne uma calculadora numérica, uma calculadora de
-          tempo e um gerador aleatório de letras, números, símbolos e
-          emojis, com letras acentuadas e símbolos extras opcionais.
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>O Priv-TimeCalc soma, subtrai e converte durações.</p>
-
-        <h4>Priv-Calc</h4>
-        <p>O Priv-Calc realiza operações matemáticas básicas.</p>
-
-        <h4>Priv-Tris</h4>
-        <p>
-          O Priv-Tris é um jogo da velha para duas pessoas no mesmo dispositivo.
-        </p>
-
-        <h4>Priv-Random</h4>
-        <p>O Priv-Random gera letras, números, símbolos e emojis aleatórios.</p>
-      </section>
-
-      <section>
-        <h3>3. Processamento local e área de transferência</h3>
-        <p>
-          Os cálculos, as gerações aleatórias e as partidas são processados
-          localmente no dispositivo. O desenvolvedor não coleta nem transmite
-          a servidores remotos valores inseridos, resultados, jogadas ou
-          preferências de geração. Essas funções não exigem Internet nem
-          conta. Os aplicativos não incluem intencionalmente publicidade,
-          análises ou rastreamento de terceiros.
-        </p>
-        <p class="notice">
-          Nos aplicativos com a função Copiar, a área de transferência do
-          sistema é utilizada somente após uma ação explícita do usuário.
-          Os aplicativos não leem automaticamente seu conteúdo.
-          Os dados copiados também estão sujeitos ao funcionamento e
-          às configurações do sistema operacional.
-        </p>
-      </section>
-
-      <section>
-        <h3>4. Aplicativos futuros</h3>
-        <p>
-          Novos aplicativos poderão ser adicionados ao PrivTools.
-          Suas funções e práticas de dados poderão variar.
-          Esta política será atualizada quando necessário e poderão ser
-          fornecidas informações adicionais para cada aplicativo.
-        </p>
-      </section>
-
-      <section>
-        <h3>5. Suporte por e-mail</h3>
-        <p>
-          Se você enviar um e-mail ao suporte, utilizo as informações da
-          mensagem para analisar e gerenciar a solicitação, responder e
-          prestar assistência. Não inclua dados pessoais desnecessários.
-          As mensagens são mantidas pelo tempo necessário para atender à
-          solicitação e, quando aplicável, para fins legais ou de proteção
-          de direitos.
-        </p>
-        <p>
-          O provedor de e-mail processa dados técnicos e outros dados do
-          serviço conforme sua própria política e seu papel em cada
-          tratamento. Ele pode tratar dados para finalidades próprias,
-          separadas da minha gestão das solicitações de suporte.
-        </p>
-      </section>
-
-      <section>
-        <h3>6. Hospedagem do site</h3>
-        <p>
-          Esta página é hospedada no GitHub Pages. Para fornecer e proteger
-          seus serviços, o GitHub pode processar dados técnicos como
-          endereços IP, informações do dispositivo, dados de solicitações
-          e registros de acesso, conforme sua própria política e seu papel
-          em cada tratamento. Visitar o site é diferente de usar os
-          aplicativos offline.
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            Declaração geral de privacidade do GitHub
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. Base legal e direitos</h3>
-        <p>
-          Quando o GDPR se aplica, os dados pessoais são tratados com a
-          base legal adequada ao caso, por exemplo para responder a uma
-          solicitação ou cumprir obrigações legais. Nos limites da lei,
-          você pode solicitar acesso, correção, exclusão, restrição,
-          opor-se ao tratamento ou exercer a portabilidade quando aplicável.
-          Para tratamentos de minha responsabilidade, entre em contato
-          pelo e-mail acima.
-        </p>
-        <p>
-          Você também pode apresentar uma reclamação à autoridade de
-          controle competente. Na Itália:
-          <a href="https://www.garanteprivacy.it/">
-            Autoridade italiana de proteção de dados (Garante)
-          </a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>8. Alterações nesta política</h3>
-        <p>
-          Esta política pode ser atualizada para refletir mudanças nos
-          aplicativos, serviços utilizados ou obrigações aplicáveis.
-          A data acima indica a última atualização.
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">Voltar aos idiomas</a></p>
-    </article>
-
-    <article id="zh-Hans" lang="zh-Hans" aria-labelledby="title-zh-Hans">
-      <h2 id="title-zh-Hans">隐私政策 — PrivTools</h2>
-      <p class="subtitle">注重隐私设计。透明。由用户掌控。</p>
-      <p class="updated">
-        <time datetime="2026-11-19">最后更新：2026年11月19日</time>
-      </p>
-
-      <p>
-        本政策说明下列 PrivTools 应用（包括 PRIV-Suite）的隐私做法，
-        以及支持请求和本网站访问数据的处理方式。
-        列出某个应用并不代表它目前已在 App Store 上架。
-      </p>
-
-      <section>
-        <h3>1. 数据控制者</h3>
-        <p>
-          对于与这些应用有关、由我决定处理目的和方式的个人数据处理，
-          数据控制者为 Simone Cecere。如有隐私或个人数据请求，请联系：
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>。
-        </p>
-      </section>
-
-      <section>
-        <h3>2. 本政策涵盖的应用</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite 集成数字计算器、时间计算器以及字母、数字、符号和
-          表情符号随机生成器，可选择加入重音字母和额外符号。
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>Priv-TimeCalc 对时长进行加减和换算。</p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc 执行基本数学运算。</p>
-
-        <h4>Priv-Tris</h4>
-        <p>Priv-Tris 是供两位玩家在同一设备上玩的井字棋游戏。</p>
-
-        <h4>Priv-Random</h4>
-        <p>Priv-Random 随机生成字母、数字、符号和表情符号。</p>
-      </section>
-
-      <section>
-        <h3>3. 本地处理与系统剪贴板</h3>
-        <p>
-          计算、随机生成和游戏均在设备本地进行。
-          开发者不会收集输入值、结果、游戏操作或生成偏好，
-          也不会将其传输到远程服务器。这些功能无需互联网连接或账户。
-          应用未有意集成第三方广告、分析或跟踪工具。
-        </p>
-        <p class="notice">
-          对于提供复制功能的应用，只有在用户明确操作后才会使用系统剪贴板。
-          应用不会自动读取剪贴板内容。
-          复制的数据也受操作系统的行为和设置影响。
-        </p>
-      </section>
-
-      <section>
-        <h3>4. 未来的应用</h3>
-        <p>
-          PrivTools 未来可能增加新的应用，其功能和数据做法可能有所不同。
-          本政策将在必要时更新，并可能为个别应用提供补充信息。
-        </p>
-      </section>
-
-      <section>
-        <h3>5. 电子邮件支持</h3>
-        <p>
-          如果您向支持邮箱发送邮件，我会使用邮件中的信息来查看和处理请求、
-          回复并提供帮助。请勿包含不必要的个人信息。
-          邮件将在处理请求所需的期限内保留，
-          并在适用时为法律或权利保护目的继续保留。
-        </p>
-        <p>
-          电子邮件服务提供商会按照其自身隐私声明及其在各项处理活动中的角色，
-          处理与服务相关的技术数据和其他数据。
-          其可能为自身目的处理数据，与我处理支持请求的活动相互独立。
-        </p>
-      </section>
-
-      <section>
-        <h3>6. 网站托管</h3>
-        <p>
-          本页面托管于 GitHub Pages。为提供和保障服务，
-          GitHub 可能根据其隐私声明及其在各项处理活动中的角色，
-          处理 IP 地址、设备信息、请求数据和访问日志等技术数据。
-          访问本网站与离线使用应用是不同的活动。
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            GitHub 一般隐私声明
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. 法律依据与您的权利</h3>
-        <p>
-          在 GDPR 适用的情况下，个人数据将依据具体情形下适当的法律依据处理，
-          例如回复个人请求或履行法律义务。
-          在适用法律允许的范围内，您可以请求访问、更正、删除或限制处理个人数据，
-          反对处理，并在适用时行使数据可携权。
-          对于由我负责的处理，请通过上述邮箱联系。
-        </p>
-        <p>
-          您也可以向有管辖权的监管机构投诉。在意大利：
-          <a href="https://www.garanteprivacy.it/">
-            意大利数据保护机构（Garante）
-          </a>。
-        </p>
-      </section>
-
-      <section>
-        <h3>8. 本政策的变更</h3>
-        <p>
-          本政策可能更新，以反映应用、所使用服务或适用义务的变化。
-          上方日期表示最后更新时间。
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">返回语言选择</a></p>
-    </article>
-
-    <article id="ja" lang="ja" aria-labelledby="title-ja">
-      <h2 id="title-ja">プライバシーポリシー — PrivTools</h2>
-      <p class="subtitle">
-        プライバシーを重視した設計。透明性。ユーザーによる管理。
-      </p>
-      <p class="updated">
-        <time datetime="2026-11-19">最終更新日：2026年11月19日</time>
-      </p>
-
-      <p>
-        本ポリシーは、PRIV-Suite を含む以下の PrivTools アプリの
-        プライバシーに関する取り扱い、およびサポートへのお問い合わせと
-        本サイトへのアクセスの取り扱いを説明します。
-        アプリが記載されていても、現在 App Store で配信されていることを
-        意味しません。
-      </p>
-
-      <section>
-        <h3>1. データ管理者</h3>
-        <p>
-          これらのアプリに関連し、私が目的と手段を決定する個人データ処理について、
-          データ管理者は Simone Cecere です。
-          プライバシーや個人データに関するお問い合わせ先：
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>。
-        </p>
-      </section>
-
-      <section>
-        <h3>2. 対象のアプリ</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite は、電卓、時間計算機、文字・数字・記号・絵文字の
-          ランダム生成器をまとめたアプリです。
-          アクセント付き文字や追加の記号も選択できます。
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>Priv-TimeCalc は期間の加算、減算、換算を行います。</p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc は基本的な数学演算を行います。</p>
-
-        <h4>Priv-Tris</h4>
-        <p>Priv-Tris は同じ端末で2人が遊べる三目並べです。</p>
-
-        <h4>Priv-Random</h4>
-        <p>Priv-Random は文字、数字、記号、絵文字をランダムに生成します。</p>
-      </section>
-
-      <section>
-        <h3>3. ローカル処理とクリップボード</h3>
-        <p>
-          計算、ランダム生成、ゲームは端末上でローカルに処理されます。
-          開発者は入力値、結果、ゲームの手順、生成設定を収集したり、
-          リモートサーバーに送信したりしません。
-          これらの機能にインターネット接続やアカウントは不要です。
-          アプリに第三者の広告、分析、トラッキング機能を意図的に組み込んでいません。
-        </p>
-        <p class="notice">
-          コピー機能があるアプリでは、ユーザーの明示的な操作の後にのみ
-          システムのクリップボードを使用します。
-          クリップボードを自動的に読み取ることはありません。
-          コピーされたデータは、OSの動作や設定の影響も受けます。
-        </p>
-      </section>
-
-      <section>
-        <h3>4. 今後のアプリ</h3>
-        <p>
-          PrivTools に新しいアプリが追加される場合があります。
-          その機能やデータの取り扱いは異なる可能性があります。
-          必要に応じて本ポリシーを更新し、各アプリに補足情報を提供する場合があります。
-        </p>
-      </section>
-
-      <section>
-        <h3>5. メールによるサポート</h3>
-        <p>
-          サポート宛てにメールを送信した場合、メッセージの情報を確認、
-          対応、返信、必要なサポートに使用します。
-          不要な個人情報は含めないでください。
-          メッセージは対応に必要な期間、および該当する場合は
-          法的目的や権利保護に必要な期間保管されます。
-        </p>
-        <p>
-          メールサービス提供者は、独自のプライバシー通知と各処理における役割に従って、
-          技術データやその他のサービス関連データを処理します。
-          私によるサポート対応とは別に、独自の目的で処理する場合があります。
-        </p>
-      </section>
-
-      <section>
-        <h3>6. サイトのホスティング</h3>
-        <p>
-          本ページは GitHub Pages でホストされています。
-          GitHub はサービスの提供と安全確保のため、
-          独自のプライバシー通知と各処理における役割に従い、
-          IPアドレス、端末情報、リクエストデータ、アクセスログなどを
-          処理する場合があります。
-          本サイトへのアクセスとアプリのオフライン利用は別の活動です。
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            GitHub 一般プライバシー声明
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. 法的根拠と権利</h3>
-        <p>
-          GDPR が適用される場合、個人データはお問い合わせへの対応や
-          法的義務の履行など、状況に適した法的根拠に基づいて処理されます。
-          適用法の範囲内で、アクセス、訂正、削除、処理制限、処理への異議、
-          および該当する場合はデータポータビリティを請求できます。
-          私が責任を負う処理については上記メールにお問い合わせください。
-        </p>
-        <p>
-          管轄の監督機関に苦情を申し立てることもできます。イタリアの機関：
-          <a href="https://www.garanteprivacy.it/">
-            イタリアのデータ保護機関（Garante）
-          </a>。
-        </p>
-      </section>
-
-      <section>
-        <h3>8. 本ポリシーの変更</h3>
-        <p>
-          アプリ、使用するサービス、適用される義務の変更に応じて
-          本ポリシーを更新する場合があります。
-          上記の日付は最終更新日を示します。
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">言語の選択に戻る</a></p>
-    </article>
-
-    <article id="ko" lang="ko" aria-labelledby="title-ko">
-      <h2 id="title-ko">개인정보 처리방침 — PrivTools</h2>
-      <p class="subtitle">
-        설계부터 개인정보 보호. 투명성. 사용자 제어.
-      </p>
-      <p class="updated">
-        <time datetime="2026-11-19">최종 업데이트: 2026년 11월 19일</time>
-      </p>
-
-      <p>
-        본 방침은 PRIV-Suite를 포함한 아래 PrivTools 앱의 개인정보 처리 방식과
-        지원 요청 및 본 웹사이트 방문의 처리 방식을 설명합니다.
-        앱이 목록에 포함되어 있다고 해서 현재 App Store에 출시되어 있다는
-        의미는 아닙니다.
-      </p>
-
-      <section>
-        <h3>1. 개인정보처리자</h3>
-        <p>
-          이 앱과 관련하여 본인이 목적과 수단을 결정하는 개인정보 처리의
-          개인정보처리자는 Simone Cecere입니다.
-          개인정보 관련 요청은 다음 주소로 연락해 주세요:
-          <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>2. 적용 대상 앱</h3>
-
-        <h4>PRIV-Suite</h4>
-        <p>
-          PRIV-Suite는 일반 계산기, 시간 계산기,
-          문자·숫자·기호·이모지 무작위 생성기를 제공합니다.
-          악센트 문자와 추가 기호를 선택적으로 포함할 수 있습니다.
-        </p>
-
-        <h4>Priv-TimeCalc</h4>
-        <p>Priv-TimeCalc는 기간의 덧셈, 뺄셈 및 환산을 수행합니다.</p>
-
-        <h4>Priv-Calc</h4>
-        <p>Priv-Calc는 기본 수학 연산을 수행합니다.</p>
-
-        <h4>Priv-Tris</h4>
-        <p>Priv-Tris는 같은 기기에서 두 사람이 즐기는 틱택토 게임입니다.</p>
-
-        <h4>Priv-Random</h4>
-        <p>Priv-Random은 문자, 숫자, 기호 및 이모지를 무작위로 생성합니다.</p>
-      </section>
-
-      <section>
-        <h3>3. 로컬 처리 및 시스템 클립보드</h3>
-        <p>
-          계산, 무작위 생성 및 게임은 기기에서 로컬로 처리됩니다.
-          개발자는 입력값, 결과, 게임 수 또는 생성 설정을 수집하거나
-          원격 서버로 전송하지 않습니다.
-          이 기능에는 인터넷이나 계정이 필요하지 않습니다.
-          앱은 제3자 광고, 분석 또는 추적 도구를 의도적으로 포함하지 않습니다.
-        </p>
-        <p class="notice">
-          복사 기능이 있는 앱은 사용자의 명시적인 작업 후에만 시스템
-          클립보드를 사용합니다. 클립보드 내용을 자동으로 읽지 않습니다.
-          복사된 데이터는 운영체제의 동작 및 설정에도 영향을 받습니다.
-        </p>
-      </section>
-
-      <section>
-        <h3>4. 향후 앱</h3>
-        <p>
-          PrivTools에 새 앱이 추가될 수 있습니다.
-          기능과 데이터 처리 방식은 다를 수 있습니다.
-          필요한 경우 본 방침을 업데이트하고 개별 앱에 대한 추가 정보를
-          제공할 수 있습니다.
-        </p>
-      </section>
-
-      <section>
-        <h3>5. 이메일 지원</h3>
-        <p>
-          지원 이메일로 문의하면 메시지의 정보를 사용하여 요청을 검토하고
-          처리하며 답변 및 지원을 제공합니다.
-          불필요한 개인정보를 포함하지 마세요.
-          메시지는 요청 처리에 필요한 기간 및 해당하는 경우 법적 목적이나
-          권리 보호에 필요한 기간 동안 보관됩니다.
-        </p>
-        <p>
-          이메일 제공업체는 자체 개인정보 처리방침과 각 처리 활동에서의
-          역할에 따라 기술 데이터 및 서비스 관련 데이터를 처리합니다.
-          본인의 지원 요청 처리와 별도로 자체 목적을 위해 데이터를
-          처리할 수 있습니다.
-        </p>
-      </section>
-
-      <section>
-        <h3>6. 웹사이트 호스팅</h3>
-        <p>
-          본 페이지는 GitHub Pages에서 호스팅됩니다.
-          GitHub는 서비스 제공과 보안을 위해 자체 개인정보 처리방침 및
-          각 처리에서의 역할에 따라 IP 주소, 기기 정보, 요청 데이터,
-          접속 로그 등의 기술 데이터를 처리할 수 있습니다.
-          웹사이트 방문과 앱의 오프라인 사용은 별개입니다.
-        </p>
-        <p>
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
-            GitHub 일반 개인정보 처리방침
-          </a>
-        </p>
-      </section>
-
-      <section>
-        <h3>7. 법적 근거 및 권리</h3>
-        <p>
-          GDPR이 적용되는 경우 개인정보는 요청 응답이나 법적 의무 이행 등
-          상황에 적합한 법적 근거에 따라 처리됩니다.
-          관련 법률의 범위 내에서 열람, 정정, 삭제, 처리 제한, 처리 반대 및
-          해당하는 경우 데이터 이동권을 요청할 수 있습니다.
-          본인이 책임지는 처리에 대해서는 위 이메일로 연락해 주세요.
-        </p>
-        <p>
-          관할 감독기관에 민원을 제기할 수도 있습니다.
-          이탈리아의 감독기관:
-          <a href="https://www.garanteprivacy.it/">
-            이탈리아 개인정보 보호기관(Garante)
-          </a>.
-        </p>
-      </section>
-
-      <section>
-        <h3>8. 본 방침의 변경</h3>
-        <p>
-          앱, 사용 서비스 또는 관련 의무의 변경을 반영하기 위해 본 방침을
-          업데이트할 수 있습니다. 위 날짜는 최종 업데이트일을 나타냅니다.
-        </p>
-      </section>
-
-      <p class="back"><a href="#languages">언어 선택으로 돌아가기</a></p>
-    </article>
-
-    <footer>
-      <p>
-        PrivTools ·
-        <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a>
-      </p>
-    </footer>
-  </main>
+<main class="container">
+<header>
+<div class="brand"><span class="brand-mark" aria-hidden="true">P</span><span>PRIV-Suite</span></div>
+<h1>Privacy Policy</h1>
+<p class="subtitle">PRIV-Suite</p>
+</header>
+<nav id="languages" class="language-nav" aria-label="Language selection">
+<a href="#en" lang="en" hreflang="en">English</a>
+<a href="#it" lang="it" hreflang="it">Italiano</a>
+<a href="#es" lang="es" hreflang="es">Español</a>
+<a href="#fr" lang="fr" hreflang="fr">Français</a>
+<a href="#de" lang="de" hreflang="de">Deutsch</a>
+<a href="#pt-BR" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+<a href="#zh-Hans" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="#ja" lang="ja" hreflang="ja">日本語</a>
+<a href="#ko" lang="ko" hreflang="ko">한국어</a>
+</nav>
+<article id="en" lang="en" aria-labelledby="title-en">
+<h2 id="title-en">Privacy Policy — PRIV-Suite</h2>
+<p class="subtitle">Privacy by design. Transparency. User control.</p>
+<p class="updated"><time datetime="2026-11-19">Last updated: November 19, 2026</time></p>
+<p>This policy describes how PRIV-Suite handles privacy, support requests and visits to this website. PRIV-Suite is a single application combining a calculator, a time calculator and a random generator.</p>
+<section aria-labelledby="en-section-1"><h3 id="en-section-1">1. Data controller</h3><p>For personal-data processing whose purposes and means I determine in connection with PRIV-Suite, the data controller is Simone Cecere. For privacy or personal-data requests, contact: <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="en-section-2"><h3 id="en-section-2">2. App functions</h3><p>PRIV-Suite combines a numerical calculator, a time calculator and a random generator for letters, numbers, symbols and emoji, with optional accented letters and extra symbols.</p></section>
+<section aria-labelledby="en-section-3"><h3 id="en-section-3">3. Local processing and system clipboard</h3><p>Calculations and random generation take place locally on the device. The developer does not collect or transmit input values, results or generation preferences to remote servers. These functions do not require an Internet connection or an account. PRIV-Suite does not include advertising, third-party analytics or tracking tools.</p><p class="notice">The Copy function uses the system clipboard only after an explicit user action. PRIV-Suite does not automatically read clipboard contents. Copied data is also subject to the operating system's behavior and settings.</p></section>
+<section aria-labelledby="en-section-4"><h3 id="en-section-4">4. Support email</h3><p>If you email support, I use the information in your message to review and manage your request, reply and provide assistance. Please do not include unnecessary personal information. Messages are retained for as long as necessary to handle the request and, where applicable, for legal or rights-protection purposes.</p><p>The email provider processes technical and other data associated with its service according to its own privacy notice and its role in each processing activity. It may process data for its own purposes, separately from my handling of support requests.</p></section>
+<section aria-labelledby="en-section-5"><h3 id="en-section-5">5. Website hosting</h3><p>This page is hosted on GitHub Pages. To provide and secure its services, GitHub may process technical data such as IP addresses, device information, request data and access logs under its own privacy notice and according to its role in each processing activity. Reading this website is separate from using PRIV-Suite offline.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub General Privacy Statement</a></p></section>
+<section aria-labelledby="en-section-6"><h3 id="en-section-6">6. Legal basis and your rights</h3><p>Where the GDPR applies, personal data is processed on the legal basis appropriate to the circumstances, for example to respond to a person's request or comply with legal obligations. Subject to applicable law, you may request access, rectification, erasure, restriction of processing, object to processing or exercise data portability rights where applicable. For processing for which I am responsible, contact the email address above.</p><p>You may also lodge a complaint with the competent supervisory authority. In Italy: <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Italian Data Protection Authority (Garante)</a>.</p></section>
+<section aria-labelledby="en-section-7"><h3 id="en-section-7">7. Changes to this policy</h3><p>This policy may be updated to reflect changes or new features within PRIV-Suite, services used or applicable obligations. New features will be integrated into the same app. The date above indicates the latest update.</p></section>
+<p class="back"><a href="#languages">Back to languages</a></p>
+</article>
+<article id="it" lang="it" aria-labelledby="title-it">
+<h2 id="title-it">Informativa sulla privacy — PRIV-Suite</h2>
+<p class="subtitle">Privacy fin dalla progettazione. Trasparenza. Controllo dell'utente.</p>
+<p class="updated"><time datetime="2026-11-19">Ultimo aggiornamento: 19 novembre 2026</time></p>
+<p>Questa informativa descrive la gestione della privacy in PRIV-Suite, delle richieste di assistenza e delle visite a questo sito. PRIV-Suite è un'unica applicazione che riunisce calcolatrice, calcolatrice temporale e generatore casuale.</p>
+<section aria-labelledby="it-section-1"><h3 id="it-section-1">1. Titolare del trattamento</h3><p>Per i trattamenti di dati personali di cui determina finalità e mezzi nell'ambito di PRIV-Suite, il titolare è Simone Cecere. Per richieste sulla privacy o sui dati personali, contatta: <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="it-section-2"><h3 id="it-section-2">2. Funzioni dell'app</h3><p>PRIV-Suite riunisce una calcolatrice numerica, una calcolatrice temporale e un generatore casuale di lettere, numeri, simboli ed emoji, con lettere accentate e simboli extra facoltativi.</p></section>
+<section aria-labelledby="it-section-3"><h3 id="it-section-3">3. Trattamento locale e appunti del sistema</h3><p>Calcoli e generazioni casuali sono gestiti localmente sul dispositivo. Lo sviluppatore non raccoglie né trasmette a server remoti valori inseriti, risultati o preferenze di generazione. Queste funzioni non richiedono Internet né account. PRIV-Suite non integra pubblicità, strumenti di analisi o tracciamento di terze parti.</p><p class="notice">La funzione Copia utilizza gli appunti del sistema solo dopo un'azione esplicita dell'utente. PRIV-Suite non legge automaticamente gli appunti. I dati copiati sono soggetti anche al funzionamento e alle impostazioni del sistema operativo.</p></section>
+<section aria-labelledby="it-section-4"><h3 id="it-section-4">4. Email di assistenza</h3><p>Se scrivi all'assistenza, utilizzo le informazioni del messaggio per esaminare e gestire la richiesta, rispondere e fornire supporto. Non includere dati personali non necessari. I messaggi sono conservati per il tempo necessario alla gestione della richiesta e per eventuali esigenze legali o di tutela dei diritti, quando applicabili.</p><p>Il fornitore di posta tratta i dati tecnici e gli altri dati del servizio secondo la propria informativa e il ruolo assunto per ciascun trattamento. Può effettuare trattamenti per finalità proprie, distinti dalla gestione delle richieste di assistenza da parte mia.</p></section>
+<section aria-labelledby="it-section-5"><h3 id="it-section-5">5. Hosting del sito</h3><p>Questa pagina è ospitata su GitHub Pages. Per erogare e proteggere i suoi servizi, GitHub può trattare dati tecnici come indirizzi IP, informazioni sul dispositivo, dati delle richieste e log di accesso secondo la propria informativa e il ruolo assunto per ciascun trattamento. La visita al sito è distinta dall'utilizzo offline di PRIV-Suite.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Informativa sulla privacy di GitHub</a></p></section>
+<section aria-labelledby="it-section-6"><h3 id="it-section-6">6. Base giuridica e diritti</h3><p>Quando si applica il GDPR, i dati personali sono trattati sulla base giuridica pertinente al caso concreto, per esempio per rispondere a una richiesta o adempiere a obblighi di legge. Nei limiti della normativa puoi chiedere accesso, rettifica, cancellazione, limitazione, opporti al trattamento o esercitare la portabilità quando applicabile. Per i trattamenti di mia competenza, contatta l'indirizzo email sopra indicato.</p><p>Puoi inoltre proporre reclamo all'autorità di controllo competente. In Italia: <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Garante per la protezione dei dati personali</a>.</p></section>
+<section aria-labelledby="it-section-7"><h3 id="it-section-7">7. Modifiche all'informativa</h3><p>Questa informativa può essere aggiornata per riflettere modifiche o nuove funzionalità di PRIV-Suite, servizi utilizzati o obblighi applicabili. Le nuove funzionalità saranno integrate nella stessa app. La data sopra indica l'ultimo aggiornamento.</p></section>
+<p class="back"><a href="#languages">Torna alle lingue</a></p>
+</article>
+<article id="es" lang="es" aria-labelledby="title-es">
+<h2 id="title-es">Política de privacidad — PRIV-Suite</h2>
+<p class="subtitle">Privacidad desde el diseño. Transparencia. Control del usuario.</p>
+<p class="updated"><time datetime="2026-11-19">Última actualización: 19 de noviembre de 2026</time></p>
+<p>Esta política describe la privacidad en PRIV-Suite, la gestión de las solicitudes de asistencia y las visitas a este sitio. PRIV-Suite es una única aplicación que reúne una calculadora, una calculadora de tiempo y un generador aleatorio.</p>
+<section aria-labelledby="es-section-1"><h3 id="es-section-1">1. Responsable del tratamiento</h3><p>El responsable del tratamiento de datos personales cuyos fines y medios determino en relación con PRIV-Suite es Simone Cecere. Para consultas sobre privacidad o datos personales, contacta con: <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="es-section-2"><h3 id="es-section-2">2. Funciones de la app</h3><p>PRIV-Suite reúne una calculadora numérica, una calculadora de tiempo y un generador aleatorio de letras, números, símbolos y emoji, con letras acentuadas y símbolos adicionales opcionales.</p></section>
+<section aria-labelledby="es-section-3"><h3 id="es-section-3">3. Tratamiento local y portapapeles</h3><p>Los cálculos y las generaciones aleatorias se realizan localmente en el dispositivo. El desarrollador no recopila ni transmite a servidores remotos valores introducidos, resultados ni preferencias de generación. Estas funciones no requieren Internet ni cuenta. PRIV-Suite no incluye publicidad, análisis ni seguimiento de terceros.</p><p class="notice">La función Copiar utiliza el portapapeles del sistema solo tras una acción explícita del usuario. PRIV-Suite no lee automáticamente su contenido. Los datos copiados también están sujetos al funcionamiento y la configuración del sistema operativo.</p></section>
+<section aria-labelledby="es-section-4"><h3 id="es-section-4">4. Correo de asistencia</h3><p>Si escribes al correo de asistencia, utilizo la información del mensaje para examinar y gestionar la solicitud, responder y prestar ayuda. No incluyas datos personales innecesarios. Los mensajes se conservan durante el tiempo necesario para gestionar la solicitud y, cuando proceda, para fines legales o de protección de derechos.</p><p>El proveedor de correo trata los datos técnicos y otros datos del servicio según su propia política y su función en cada tratamiento. Puede tratar datos para fines propios, separados de mi gestión de las solicitudes de asistencia.</p></section>
+<section aria-labelledby="es-section-5"><h3 id="es-section-5">5. Alojamiento del sitio</h3><p>Esta página se aloja en GitHub Pages. Para prestar y proteger sus servicios, GitHub puede tratar datos técnicos como direcciones IP, información del dispositivo, datos de solicitudes y registros de acceso según su propia política y su función en cada tratamiento. Visitar el sitio es distinto de utilizar PRIV-Suite sin conexión.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Declaración general de privacidad de GitHub</a></p></section>
+<section aria-labelledby="es-section-6"><h3 id="es-section-6">6. Base jurídica y derechos</h3><p>Cuando se aplica el RGPD, los datos personales se tratan según la base jurídica pertinente, por ejemplo para responder a una solicitud o cumplir obligaciones legales. Dentro de los límites legales puedes solicitar acceso, rectificación, supresión, limitación, oponerte al tratamiento o ejercer la portabilidad cuando proceda. Para tratamientos de mi responsabilidad, contacta con el correo indicado arriba.</p><p>También puedes presentar una reclamación ante la autoridad de control competente. En Italia: <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Autoridad italiana de protección de datos (Garante)</a>.</p></section>
+<section aria-labelledby="es-section-7"><h3 id="es-section-7">7. Cambios en esta política</h3><p>Esta política puede actualizarse para reflejar cambios o nuevas funciones de PRIV-Suite, los servicios utilizados o las obligaciones aplicables. Las nuevas funciones se integrarán en la misma app. La fecha anterior indica la última actualización.</p></section>
+<p class="back"><a href="#languages">Volver a los idiomas</a></p>
+</article>
+<article id="fr" lang="fr" aria-labelledby="title-fr">
+<h2 id="title-fr">Politique de confidentialité — PRIV-Suite</h2>
+<p class="subtitle">Confidentialité dès la conception. Transparence. Contrôle de l'utilisateur.</p>
+<p class="updated"><time datetime="2026-11-19">Dernière mise à jour : 19 novembre 2026</time></p>
+<p>Cette politique décrit la confidentialité dans PRIV-Suite, la gestion des demandes d'assistance et les visites de ce site. PRIV-Suite est une application unique réunissant une calculatrice, une calculatrice temporelle et un générateur aléatoire.</p>
+<section aria-labelledby="fr-section-1"><h3 id="fr-section-1">1. Responsable du traitement</h3><p>Pour les traitements de données personnelles dont je détermine les finalités et les moyens dans le cadre de PRIV-Suite, le responsable est Simone Cecere. Pour toute demande relative à la confidentialité ou aux données personnelles, contactez : <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="fr-section-2"><h3 id="fr-section-2">2. Fonctions de l'app</h3><p>PRIV-Suite réunit une calculatrice numérique, une calculatrice temporelle et un générateur aléatoire de lettres, nombres, symboles et emoji, avec lettres accentuées et symboles supplémentaires facultatifs.</p></section>
+<section aria-labelledby="fr-section-3"><h3 id="fr-section-3">3. Traitement local et presse-papiers</h3><p>Les calculs et les générations aléatoires sont réalisés localement sur l'appareil. Le développeur ne collecte ni ne transmet à des serveurs distants les valeurs saisies, résultats ou préférences de génération. Ces fonctions ne nécessitent ni Internet ni compte. PRIV-Suite n'intègre pas de publicité, d'analyse ou de suivi tiers.</p><p class="notice">La fonction Copier utilise le presse-papiers système uniquement après une action explicite de l'utilisateur. PRIV-Suite ne lit pas automatiquement son contenu. Les données copiées dépendent également du fonctionnement et des réglages du système d'exploitation.</p></section>
+<section aria-labelledby="fr-section-4"><h3 id="fr-section-4">4. Assistance par e-mail</h3><p>Si vous écrivez à l'assistance, j'utilise les informations du message pour examiner et gérer votre demande, répondre et vous aider. N'incluez pas de données personnelles inutiles. Les messages sont conservés le temps nécessaire au traitement de la demande et, le cas échéant, à des fins légales ou de protection des droits.</p><p>Le fournisseur de messagerie traite les données techniques et autres données du service conformément à sa propre politique et à son rôle pour chaque traitement. Il peut traiter des données à ses propres fins, distinctes de ma gestion des demandes d'assistance.</p></section>
+<section aria-labelledby="fr-section-5"><h3 id="fr-section-5">5. Hébergement du site</h3><p>Cette page est hébergée sur GitHub Pages. Pour fournir et sécuriser ses services, GitHub peut traiter des données techniques telles que l'adresse IP, les informations sur l'appareil, les données des requêtes et les journaux d'accès, selon sa propre politique et son rôle pour chaque traitement. La visite du site est distincte de l'utilisation hors ligne de PRIV-Suite.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Déclaration générale de confidentialité de GitHub</a></p></section>
+<section aria-labelledby="fr-section-6"><h3 id="fr-section-6">6. Base juridique et droits</h3><p>Lorsque le RGPD s'applique, les données personnelles sont traitées sur la base juridique adaptée, par exemple pour répondre à une demande ou respecter des obligations légales. Dans les limites de la loi, vous pouvez demander l'accès, la rectification, l'effacement, la limitation, vous opposer au traitement ou exercer la portabilité lorsque celle-ci s'applique. Pour les traitements dont je suis responsable, contactez l'adresse ci-dessus.</p><p>Vous pouvez également déposer une réclamation auprès de l'autorité de contrôle compétente. En Italie : <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Autorité italienne de protection des données (Garante)</a>.</p></section>
+<section aria-labelledby="fr-section-7"><h3 id="fr-section-7">7. Modifications de cette politique</h3><p>Cette politique peut être mise à jour pour refléter les modifications ou nouvelles fonctions de PRIV-Suite, les services utilisés ou les obligations applicables. Les nouvelles fonctions seront intégrées à la même app. La date ci-dessus indique la dernière mise à jour.</p></section>
+<p class="back"><a href="#languages">Retour aux langues</a></p>
+</article>
+<article id="de" lang="de" aria-labelledby="title-de">
+<h2 id="title-de">Datenschutzrichtlinie — PRIV-Suite</h2>
+<p class="subtitle">Datenschutz von Anfang an. Transparenz. Kontrolle durch die Nutzer.</p>
+<p class="updated"><time datetime="2026-11-19">Letzte Aktualisierung: 19. November 2026</time></p>
+<p>Diese Richtlinie beschreibt den Datenschutz in PRIV-Suite sowie den Umgang mit Supportanfragen und Besuchen dieser Website. PRIV-Suite ist eine einzelne App mit Taschenrechner, Zeitrechner und Zufallsgenerator.</p>
+<section aria-labelledby="de-section-1"><h3 id="de-section-1">1. Verantwortlicher</h3><p>Verantwortlicher für die Verarbeitung personenbezogener Daten im Zusammenhang mit PRIV-Suite, deren Zwecke und Mittel ich festlege, ist Simone Cecere. Für Datenschutzanfragen wenden Sie sich an: <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="de-section-2"><h3 id="de-section-2">2. App-Funktionen</h3><p>PRIV-Suite vereint einen Taschenrechner, einen Zeitrechner und einen Zufallsgenerator für Buchstaben, Zahlen, Symbole und Emojis, optional mit Akzentbuchstaben und zusätzlichen Symbolen.</p></section>
+<section aria-labelledby="de-section-3"><h3 id="de-section-3">3. Lokale Verarbeitung und Zwischenablage</h3><p>Berechnungen und Zufallsgenerierung erfolgen lokal auf dem Gerät. Der Entwickler erhebt keine Eingaben, Ergebnisse oder Generierungseinstellungen und übermittelt sie nicht an entfernte Server. Diese Funktionen benötigen weder Internet noch ein Konto. PRIV-Suite enthält keine Werbung, Analyse- oder Tracking-Dienste Dritter.</p><p class="notice">Die Kopierfunktion verwendet die Systemzwischenablage nur nach einer ausdrücklichen Nutzeraktion. PRIV-Suite liest die Zwischenablage nicht automatisch. Kopierte Daten unterliegen auch dem Verhalten und den Einstellungen des Betriebssystems.</p></section>
+<section aria-labelledby="de-section-4"><h3 id="de-section-4">4. Support per E-Mail</h3><p>Wenn Sie den Support per E-Mail kontaktieren, verwende ich die Angaben in Ihrer Nachricht, um Ihre Anfrage zu prüfen, zu bearbeiten, zu beantworten und Hilfe zu leisten. Bitte senden Sie keine unnötigen personenbezogenen Daten. Nachrichten werden so lange aufbewahrt, wie es für die Bearbeitung und gegebenenfalls für rechtliche Zwecke oder den Schutz von Rechten erforderlich ist.</p><p>Der E-Mail-Anbieter verarbeitet technische und andere Dienstdaten nach seiner eigenen Datenschutzerklärung und seiner Rolle bei der jeweiligen Verarbeitung. Er kann Daten für eigene Zwecke verarbeiten, unabhängig von meiner Bearbeitung der Supportanfragen.</p></section>
+<section aria-labelledby="de-section-5"><h3 id="de-section-5">5. Website-Hosting</h3><p>Diese Seite wird auf GitHub Pages gehostet. Zur Bereitstellung und Absicherung seiner Dienste kann GitHub technische Daten wie IP-Adressen, Geräteinformationen, Anfragedaten und Zugriffsprotokolle gemäß seiner Datenschutzerklärung und seiner jeweiligen Rolle verarbeiten. Der Websitebesuch ist von der Offline-Nutzung von PRIV-Suite zu unterscheiden.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Allgemeine Datenschutzerklärung von GitHub</a></p></section>
+<section aria-labelledby="de-section-6"><h3 id="de-section-6">6. Rechtsgrundlage und Ihre Rechte</h3><p>Soweit die DSGVO gilt, werden personenbezogene Daten auf der jeweils einschlägigen Rechtsgrundlage verarbeitet, etwa zur Beantwortung einer Anfrage oder zur Erfüllung gesetzlicher Pflichten. Im gesetzlichen Rahmen können Sie Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und gegebenenfalls Datenübertragbarkeit verlangen. Für Verarbeitungen in meiner Verantwortung kontaktieren Sie die oben genannte E-Mail-Adresse.</p><p>Sie können sich außerdem bei der zuständigen Aufsichtsbehörde beschweren. In Italien: <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Italienische Datenschutzbehörde (Garante)</a>.</p></section>
+<section aria-labelledby="de-section-7"><h3 id="de-section-7">7. Änderungen dieser Richtlinie</h3><p>Diese Richtlinie kann aktualisiert werden, um Änderungen oder neue Funktionen von PRIV-Suite, genutzte Dienste oder geltende Pflichten widerzuspiegeln. Neue Funktionen werden in dieselbe App integriert. Das Datum oben nennt die letzte Aktualisierung.</p></section>
+<p class="back"><a href="#languages">Zur Sprachauswahl</a></p>
+</article>
+<article id="pt-BR" lang="pt-BR" aria-labelledby="title-pt-BR">
+<h2 id="title-pt-BR">Política de privacidade — PRIV-Suite</h2>
+<p class="subtitle">Privacidade desde a concepção. Transparência. Controle do usuário.</p>
+<p class="updated"><time datetime="2026-11-19">Última atualização: 19 de novembro de 2026</time></p>
+<p>Esta política descreve a privacidade no PRIV-Suite, o tratamento das solicitações de suporte e as visitas a este site. O PRIV-Suite é um único aplicativo que reúne uma calculadora, uma calculadora de tempo e um gerador aleatório.</p>
+<section aria-labelledby="pt-BR-section-1"><h3 id="pt-BR-section-1">1. Controlador de dados</h3><p>O controlador dos tratamentos de dados pessoais cujas finalidades e meios determino em relação ao PRIV-Suite é Simone Cecere. Para questões de privacidade ou dados pessoais, entre em contato: <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="pt-BR-section-2"><h3 id="pt-BR-section-2">2. Funções do aplicativo</h3><p>O PRIV-Suite reúne uma calculadora numérica, uma calculadora de tempo e um gerador aleatório de letras, números, símbolos e emojis, com letras acentuadas e símbolos extras opcionais.</p></section>
+<section aria-labelledby="pt-BR-section-3"><h3 id="pt-BR-section-3">3. Processamento local e área de transferência</h3><p>Os cálculos e as gerações aleatórias são processados localmente no dispositivo. O desenvolvedor não coleta nem transmite a servidores remotos valores inseridos, resultados ou preferências de geração. Essas funções não exigem Internet nem conta. O PRIV-Suite não inclui publicidade, análises ou rastreamento de terceiros.</p><p class="notice">A função Copiar utiliza a área de transferência do sistema somente após uma ação explícita do usuário. O PRIV-Suite não lê automaticamente seu conteúdo. Os dados copiados também estão sujeitos ao funcionamento e às configurações do sistema operacional.</p></section>
+<section aria-labelledby="pt-BR-section-4"><h3 id="pt-BR-section-4">4. Suporte por e-mail</h3><p>Se você enviar um e-mail ao suporte, utilizo as informações da mensagem para analisar e gerenciar a solicitação, responder e prestar assistência. Não inclua dados pessoais desnecessários. As mensagens são mantidas pelo tempo necessário para atender à solicitação e, quando aplicável, para fins legais ou de proteção de direitos.</p><p>O provedor de e-mail processa dados técnicos e outros dados do serviço conforme sua própria política e seu papel em cada tratamento. Ele pode tratar dados para finalidades próprias, separadas da minha gestão das solicitações de suporte.</p></section>
+<section aria-labelledby="pt-BR-section-5"><h3 id="pt-BR-section-5">5. Hospedagem do site</h3><p>Esta página é hospedada no GitHub Pages. Para fornecer e proteger seus serviços, o GitHub pode processar dados técnicos como endereços IP, informações do dispositivo, dados de solicitações e registros de acesso, conforme sua própria política e seu papel em cada tratamento. Visitar o site é diferente de usar o PRIV-Suite offline.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Declaração geral de privacidade do GitHub</a></p></section>
+<section aria-labelledby="pt-BR-section-6"><h3 id="pt-BR-section-6">6. Base legal e direitos</h3><p>Quando o GDPR se aplica, os dados pessoais são tratados com a base legal adequada ao caso, por exemplo para responder a uma solicitação ou cumprir obrigações legais. Nos limites da lei, você pode solicitar acesso, correção, exclusão, restrição, opor-se ao tratamento ou exercer a portabilidade quando aplicável. Para tratamentos de minha responsabilidade, entre em contato pelo e-mail acima.</p><p>Você também pode apresentar uma reclamação à autoridade de controle competente. Na Itália: <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">Autoridade italiana de proteção de dados (Garante)</a>.</p></section>
+<section aria-labelledby="pt-BR-section-7"><h3 id="pt-BR-section-7">7. Alterações nesta política</h3><p>Esta política pode ser atualizada para refletir mudanças ou novas funções do PRIV-Suite, serviços utilizados ou obrigações aplicáveis. As novas funções serão integradas ao mesmo aplicativo. A data acima indica a última atualização.</p></section>
+<p class="back"><a href="#languages">Voltar aos idiomas</a></p>
+</article>
+<article id="zh-Hans" lang="zh-Hans" aria-labelledby="title-zh-Hans">
+<h2 id="title-zh-Hans">隐私政策 — PRIV-Suite</h2>
+<p class="subtitle">注重隐私设计。透明。由用户掌控。</p>
+<p class="updated"><time datetime="2026-11-19">最后更新：2026年11月19日</time></p>
+<p>本政策说明 PRIV-Suite 的隐私做法，以及支持请求和本网站访问数据的处理方式。PRIV-Suite 是集计算器、时间计算器和随机生成器于一体的单一应用。</p>
+<section aria-labelledby="zh-Hans-section-1"><h3 id="zh-Hans-section-1">1. 数据控制者</h3><p>对于与 PRIV-Suite 有关、由我决定处理目的和方式的个人数据处理，数据控制者为 Simone Cecere。如有隐私或个人数据请求，请联系： <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="zh-Hans-section-2"><h3 id="zh-Hans-section-2">2. 应用功能</h3><p>PRIV-Suite 集成数字计算器、时间计算器以及字母、数字、符号和表情符号随机生成器，可选择加入重音字母和额外符号。</p></section>
+<section aria-labelledby="zh-Hans-section-3"><h3 id="zh-Hans-section-3">3. 本地处理与系统剪贴板</h3><p>计算和随机生成均在设备本地进行。开发者不会收集输入值、结果或生成偏好，也不会将其传输到远程服务器。这些功能无需互联网连接或账户。PRIV-Suite 不包含第三方广告、分析或跟踪工具。</p><p class="notice">复制功能只有在用户明确操作后才会使用系统剪贴板。PRIV-Suite 不会自动读取剪贴板内容。复制的数据也受操作系统的行为和设置影响。</p></section>
+<section aria-labelledby="zh-Hans-section-4"><h3 id="zh-Hans-section-4">4. 电子邮件支持</h3><p>如果您向支持邮箱发送邮件，我会使用邮件中的信息来查看和处理请求、回复并提供帮助。请勿包含不必要的个人信息。邮件将在处理请求所需的期限内保留，并在适用时为法律或权利保护目的继续保留。</p><p>电子邮件服务提供商会按照其自身隐私声明及其在各项处理活动中的角色，处理与服务相关的技术数据和其他数据。其可能为自身目的处理数据，与我处理支持请求的活动相互独立。</p></section>
+<section aria-labelledby="zh-Hans-section-5"><h3 id="zh-Hans-section-5">5. 网站托管</h3><p>本页面托管于 GitHub Pages。为提供和保障服务，GitHub 可能根据其隐私声明及其在各项处理活动中的角色，处理 IP 地址、设备信息、请求数据和访问日志等技术数据。访问本网站与离线使用 PRIV-Suite是不同的活动。</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub 一般隐私声明</a></p></section>
+<section aria-labelledby="zh-Hans-section-6"><h3 id="zh-Hans-section-6">6. 法律依据与您的权利</h3><p>在 GDPR 适用的情况下，个人数据将依据具体情形下适当的法律依据处理，例如回复个人请求或履行法律义务。在适用法律允许的范围内，您可以请求访问、更正、删除或限制处理个人数据，反对处理，并在适用时行使数据可携权。对于由我负责的处理，请通过上述邮箱联系。</p><p>您也可以向有管辖权的监管机构投诉。在意大利： <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">意大利数据保护机构（Garante）</a>.</p></section>
+<section aria-labelledby="zh-Hans-section-7"><h3 id="zh-Hans-section-7">7. 本政策的变更</h3><p>本政策可能更新，以反映 PRIV-Suite 的变更或新功能、所使用服务或适用义务的变化。新功能将整合到同一应用中。上方日期表示最后更新时间。</p></section>
+<p class="back"><a href="#languages">返回语言选择</a></p>
+</article>
+<article id="ja" lang="ja" aria-labelledby="title-ja">
+<h2 id="title-ja">プライバシーポリシー — PRIV-Suite</h2>
+<p class="subtitle">プライバシーを重視した設計。透明性。ユーザーによる管理。</p>
+<p class="updated"><time datetime="2026-11-19">最終更新日：2026年11月19日</time></p>
+<p>本ポリシーは、PRIV-Suite のプライバシーに関する取り扱い、サポートへのお問い合わせ、および本サイトへのアクセスについて説明します。PRIV-Suite は電卓、時間計算機、ランダム生成器をまとめたひとつのアプリです。</p>
+<section aria-labelledby="ja-section-1"><h3 id="ja-section-1">1. データ管理者</h3><p>PRIV-Suite に関連し、私が目的と手段を決定する個人データ処理について、データ管理者は Simone Cecere です。プライバシーや個人データに関するお問い合わせ先： <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="ja-section-2"><h3 id="ja-section-2">2. アプリの機能</h3><p>PRIV-Suite は、電卓、時間計算機、文字・数字・記号・絵文字のランダム生成器をまとめたアプリです。アクセント付き文字や追加の記号も選択できます。</p></section>
+<section aria-labelledby="ja-section-3"><h3 id="ja-section-3">3. ローカル処理とクリップボード</h3><p>計算とランダム生成は端末上でローカルに処理されます。開発者は入力値、結果、生成設定を収集したり、リモートサーバーに送信したりしません。これらの機能にインターネット接続やアカウントは不要です。PRIV-Suite は第三者の広告、分析、トラッキング機能を含みません。</p><p class="notice">コピー機能はユーザーの明示的な操作の後にのみシステムのクリップボードを使用します。PRIV-Suite がクリップボードを自動的に読み取ることはありません。コピーされたデータは、OSの動作や設定の影響も受けます。</p></section>
+<section aria-labelledby="ja-section-4"><h3 id="ja-section-4">4. メールによるサポート</h3><p>サポート宛てにメールを送信した場合、メッセージの情報を確認、対応、返信、必要なサポートに使用します。不要な個人情報は含めないでください。メッセージは対応に必要な期間、および該当する場合は法的目的や権利保護に必要な期間保管されます。</p><p>メールサービス提供者は、独自のプライバシー通知と各処理における役割に従って、技術データやその他のサービス関連データを処理します。私によるサポート対応とは別に、独自の目的で処理する場合があります。</p></section>
+<section aria-labelledby="ja-section-5"><h3 id="ja-section-5">5. サイトのホスティング</h3><p>本ページは GitHub Pages でホストされています。GitHub はサービスの提供と安全確保のため、独自のプライバシー通知と各処理における役割に従い、IPアドレス、端末情報、リクエストデータ、アクセスログなどを処理する場合があります。本サイトへのアクセスとPRIV-Suite のオフライン利用は別の活動です。</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub 一般プライバシー声明</a></p></section>
+<section aria-labelledby="ja-section-6"><h3 id="ja-section-6">6. 法的根拠と権利</h3><p>GDPR が適用される場合、個人データはお問い合わせへの対応や法的義務の履行など、状況に適した法的根拠に基づいて処理されます。適用法の範囲内で、アクセス、訂正、削除、処理制限、処理への異議、および該当する場合はデータポータビリティを請求できます。私が責任を負う処理については上記メールにお問い合わせください。</p><p>管轄の監督機関に苦情を申し立てることもできます。イタリアの機関： <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">イタリアのデータ保護機関（Garante）</a>.</p></section>
+<section aria-labelledby="ja-section-7"><h3 id="ja-section-7">7. 本ポリシーの変更</h3><p>PRIV-Suite の変更や新機能、使用するサービス、適用される義務の変更に応じて本ポリシーを更新する場合があります。新機能は同じアプリ内に統合されます。上記の日付は最終更新日を示します。</p></section>
+<p class="back"><a href="#languages">言語の選択に戻る</a></p>
+</article>
+<article id="ko" lang="ko" aria-labelledby="title-ko">
+<h2 id="title-ko">개인정보 처리방침 — PRIV-Suite</h2>
+<p class="subtitle">설계부터 개인정보 보호. 투명성. 사용자 제어.</p>
+<p class="updated"><time datetime="2026-11-19">최종 업데이트: 2026년 11월 19일</time></p>
+<p>본 방침은 PRIV-Suite의 개인정보 처리 방식과 지원 요청 및 본 웹사이트 방문의 처리 방식을 설명합니다. PRIV-Suite는 계산기, 시간 계산기, 무작위 생성기를 하나로 통합한 앱입니다.</p>
+<section aria-labelledby="ko-section-1"><h3 id="ko-section-1">1. 개인정보처리자</h3><p>PRIV-Suite와 관련하여 본인이 목적과 수단을 결정하는 개인정보 처리의 개인정보처리자는 Simone Cecere입니다. 개인정보 관련 요청은 다음 주소로 연락해 주세요: <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></section>
+<section aria-labelledby="ko-section-2"><h3 id="ko-section-2">2. 앱 기능</h3><p>PRIV-Suite는 일반 계산기, 시간 계산기, 문자·숫자·기호·이모지 무작위 생성기를 제공합니다. 악센트 문자와 추가 기호를 선택적으로 포함할 수 있습니다.</p></section>
+<section aria-labelledby="ko-section-3"><h3 id="ko-section-3">3. 로컬 처리 및 시스템 클립보드</h3><p>계산 및 무작위 생성은 기기에서 로컬로 처리됩니다. 개발자는 입력값, 결과 또는 생성 설정을 수집하거나 원격 서버로 전송하지 않습니다. 이 기능에는 인터넷이나 계정이 필요하지 않습니다. PRIV-Suite는 제3자 광고, 분석 또는 추적 도구를 포함하지 않습니다.</p><p class="notice">복사 기능은 사용자의 명시적인 작업 후에만 시스템 클립보드를 사용합니다. PRIV-Suite는 클립보드 내용을 자동으로 읽지 않습니다. 복사된 데이터는 운영체제의 동작 및 설정에도 영향을 받습니다.</p></section>
+<section aria-labelledby="ko-section-4"><h3 id="ko-section-4">4. 이메일 지원</h3><p>지원 이메일로 문의하면 메시지의 정보를 사용하여 요청을 검토하고 처리하며 답변 및 지원을 제공합니다. 불필요한 개인정보를 포함하지 마세요. 메시지는 요청 처리에 필요한 기간 및 해당하는 경우 법적 목적이나 권리 보호에 필요한 기간 동안 보관됩니다.</p><p>이메일 제공업체는 자체 개인정보 처리방침과 각 처리 활동에서의 역할에 따라 기술 데이터 및 서비스 관련 데이터를 처리합니다. 본인의 지원 요청 처리와 별도로 자체 목적을 위해 데이터를 처리할 수 있습니다.</p></section>
+<section aria-labelledby="ko-section-5"><h3 id="ko-section-5">5. 웹사이트 호스팅</h3><p>본 페이지는 GitHub Pages에서 호스팅됩니다. GitHub는 서비스 제공과 보안을 위해 자체 개인정보 처리방침 및 각 처리에서의 역할에 따라 IP 주소, 기기 정보, 요청 데이터, 접속 로그 등의 기술 데이터를 처리할 수 있습니다. 웹사이트 방문과 PRIV-Suite의 오프라인 사용은 별개입니다.</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub 일반 개인정보 처리방침</a></p></section>
+<section aria-labelledby="ko-section-6"><h3 id="ko-section-6">6. 법적 근거 및 권리</h3><p>GDPR이 적용되는 경우 개인정보는 요청 응답이나 법적 의무 이행 등 상황에 적합한 법적 근거에 따라 처리됩니다. 관련 법률의 범위 내에서 열람, 정정, 삭제, 처리 제한, 처리 반대 및 해당하는 경우 데이터 이동권을 요청할 수 있습니다. 본인이 책임지는 처리에 대해서는 위 이메일로 연락해 주세요.</p><p>관할 감독기관에 민원을 제기할 수도 있습니다. 이탈리아의 감독기관: <a href="https://www.garanteprivacy.it/" rel="noopener noreferrer">이탈리아 개인정보 보호기관(Garante)</a>.</p></section>
+<section aria-labelledby="ko-section-7"><h3 id="ko-section-7">7. 본 방침의 변경</h3><p>PRIV-Suite의 변경이나 새 기능, 사용 서비스 또는 관련 의무의 변경을 반영하기 위해 본 방침을 업데이트할 수 있습니다. 새 기능은 동일한 앱에 통합됩니다. 위 날짜는 최종 업데이트일을 나타냅니다.</p></section>
+<p class="back"><a href="#languages">언어 선택으로 돌아가기</a></p>
+</article>
+<footer><p>PRIV-Suite · <a href="mailto:sc92.appledev@pm.me">sc92.appledev@pm.me</a></p></footer>
+</main>
 </body>
 </html>
