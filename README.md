@@ -1,2 +1,2 @@
 # privsuite-privacy
-Pagina dedicata alla privacy policy di Priv-Suite
+Pagina dedicata alla privacy policy dell'app Priv-Suite
